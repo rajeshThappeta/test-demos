@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+        }
+
+        header {
+            background-color: rgb(3, 82, 177);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            /* z-index: 2; */
+            /* left: 0; */
+            /* top: 0; */
+
+            /* clear: both; */
+        }
+
+        header ul {
+            list-style-type: none;
+            display: flex;
+            min-width: 400px;
+            justify-content: space-evenly;
+            font-size: 1.4rem;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+        main {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(3, 82, 177);
+        }
+
+        aside {
+            width: 300px;
+            /* background-color: rgb(173, 216, 230); */
+            min-height: 100vh;
+            /* height: 800px; */
+            flex-shrink: 0;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            /* text-align: center; */
+            margin-top: 80px;
+            /* border-right: 1px solid white; */
+            box-shadow: 0px 0px 10px lightblue;
+        }
+
+        p {
+            color: lightskyblue;
+            line-height: 1.5;
+        }
+
+        aside ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.5;
+            position: fixed;
+
+
+        }
+
+        aside a {
+            text-decoration: none;
+            /* color: rgb(230, 103, 18); */
+            font-size: 1.7rem;
+            color: goldenrod;
+        }
+
+        section {
+            padding: 30px 50px;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .landing-page {
+            text-align: center;
+            /* background-color: burlywood; */
+            padding: 150px 30px;
+        }
+
+        .landing-page h1 {
+            font-size: 3rem;
+            color: white;
+            padding-bottom: 60px;
+        }
+
+        .landing-page p {
+            font-size: 1.3rem;
+            color: orange;
+        }
+
+
+        .content:not(:first-child) {
+            margin-top: 300px;
+        }
+
+        .content:link {
+            margin-top: 300px;
+            background-color: aquamarine;
+        }
+
+        .spacer {
+            height: 100px;
+        }
+
+
+
+        .content .heading {
+            text-align: center;
+            font-size: 4rem;
+            color: orangered;
+        }
+
+        .content img {
+            width: 400px;
+            display: block;
+            margin: auto;
+            padding: 50px 0px;
+        }
+
+        .content p {
+            text-indent: 100px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: rgb(3, 82, 177);
+            padding: 50px;
+            box-shadow: 2px -2px 20px lightblue;
+
+            padding: 40px 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer p {
+            color: lightcoral;
+        }
+
+        @media screen and (max-width:500px) {
+            main {
+                /* background-color: aliceblue; */
+                flex-direction: column;
+            }
+
+            aside {
+                border: none;
+
+                width: 100%;
+                min-height: 100px;
+            }
+
+            aside ul {
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+            }
+
+            .spacer {
+                height: 200px;
+            }
+
+            section {
+                margin: 0px;
+            }
+
+            .landing-page {
+                padding: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/demo-images/pexels-daria-liudnaya-7354537.jpg" width="50px" alt="" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#react">React</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <div class="landing-page">
+                <h1>Web technologies</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium totam mollitia corporis ut
+                    voluptates omnis. Fugit reprehenderit earum eos, eius ea, esse quis voluptatem minus eum quasi omnis
+                    dolorem accusantium laborum voluptas ipsa saepe exercitationem magnam aut nam. Facilis accusamus
+                    esse
+                    sed nulla quae ab quasi cum iure necessitatibus?
+                </p>
+            </div>
+            <div id="html" class="content">
+                <div class="spacer"></div>
+                <h1 class="heading">HTML</h1>
+                <img src="./assets/demo-images/html.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis tempore cupiditate
+                    assumenda, error iste culpa praesentium. Consequuntur, tenetur. Et, tenetur. Atque quasi, ratione
+                    cumque laborum ex voluptate praesentium sint reprehenderit maxime molestias quisquam tempora, sequi
+                    iure amet aliquam dolor ipsum corrupti quaerat vel dolorum? Facilis officiis excepturi soluta
+                    possimus quisquam error doloribus consequatur qui modi impedit sint quasi dolorum reprehenderit
+                    alias odit temporibus quis deserunt, esse deleniti, fugit maxime expedita laboriosam minima!
+                    Reprehenderit, et rerum labore hic itaque quis maxime quibusdam temporibus distinctio voluptates ut
+                    eaque aliquid sapiente tempora animi, eligendi ab rem facere, consequatur perferendis! Reiciendis
+                    sequi consectetur rem delectus blanditiis, aliquid voluptate ex beatae qui autem. Libero quae earum
+                    nemo porro, neque ipsa vero iste culpa ad eum doloribus voluptatum ipsam iusto incidunt velit et
+                    officiis, quas quaerat, maiores impedit optio dolores voluptas at rerum. Commodi non quasi et sed
+                    harum quod, recusandae dolores ex vel illum ab accusamus suscipit cumque enim laborum, labore autem,
+                    ad excepturi. Sequi libero vel quos incidunt vitae voluptas exercitationem. Eligendi nisi explicabo
+                    exercitationem voluptatibus adipisci eaque fugit, fuga, dicta accusamus recusandae tempora molestiae
+                    debitis at sit repudiandae, sapiente deleniti vero quas fugiat incidunt quasi tenetur vitae velit!
+                    Eveniet quisquam dolore sunt!
+                </p>
+
+            </div>
+            <div id="css" class="content">
+                <div class="spacer"></div>
+                <h1 class="heading">CSS</h1>
+                <img src="./assets/demo-images/css.png" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis tempore cupiditate
+                    assumenda, error iste culpa praesentium. Consequuntur, tenetur. Et, tenetur. Atque quasi, ratione
+                    cumque laborum ex voluptate praesentium sint reprehenderit maxime molestias quisquam tempora, sequi
+                    iure amet aliquam dolor ipsum corrupti quaerat vel dolorum? Facilis officiis excepturi soluta
+                    possimus quisquam error doloribus consequatur qui modi impedit sint quasi dolorum reprehenderit
+                    alias odit temporibus quis deserunt, esse deleniti, fugit maxime expedita laboriosam minima!
+                    Reprehenderit, et rerum labore hic itaque quis maxime quibusdam temporibus distinctio voluptates ut
+                    eaque aliquid sapiente tempora animi, eligendi ab rem facere, consequatur perferendis! Reiciendis
+                    sequi consectetur rem delectus blanditiis, aliquid voluptate ex beatae qui autem. Libero quae earum
+                    nemo porro, neque ipsa vero iste culpa ad eum doloribus voluptatum ipsam iusto incidunt velit et
+                    officiis, quas quaerat, maiores impedit optio dolores voluptas at rerum. Commodi non quasi et sed
+                    harum quod, recusandae dolores ex vel illum ab accusamus suscipit cumque enim laborum, labore autem,
+                    ad excepturi. Sequi libero vel quos incidunt vitae voluptas exercitationem. Eligendi nisi explicabo
+                    exercitationem voluptatibus adipisci eaque fugit, fuga, dicta accusamus recusandae tempora molestiae
+                    debitis at sit repudiandae, sapiente deleniti vero quas fugiat incidunt quasi tenetur vitae velit!
+                    Eveniet quisquam dolore sunt!
+                </p>
+
+            </div>
+            <div id="javascript" class="content">
+                <div class="spacer"></div>
+                <h1 class="heading">JavaScript</h1>
+                <img src="./assets/demo-images/js.avif" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis tempore cupiditate
+                    assumenda, error iste culpa praesentium. Consequuntur, tenetur. Et, tenetur. Atque quasi, ratione
+                    cumque laborum ex voluptate praesentium sint reprehenderit maxime molestias quisquam tempora, sequi
+                    iure amet aliquam dolor ipsum corrupti quaerat vel dolorum? Facilis officiis excepturi soluta
+                    possimus quisquam error doloribus consequatur qui modi impedit sint quasi dolorum reprehenderit
+                    alias odit temporibus quis deserunt, esse deleniti, fugit maxime expedita laboriosam minima!
+                    Reprehenderit, et rerum labore hic itaque quis maxime quibusdam temporibus distinctio voluptates ut
+                    eaque aliquid sapiente tempora animi, eligendi ab rem facere, consequatur perferendis! Reiciendis
+                    sequi consectetur rem delectus blanditiis, aliquid voluptate ex beatae qui autem. Libero quae earum
+                    nemo porro, neque ipsa vero iste culpa ad eum doloribus voluptatum ipsam iusto incidunt velit et
+                    officiis, quas quaerat, maiores impedit optio dolores voluptas at rerum. Commodi non quasi et sed
+                    harum quod, recusandae dolores ex vel illum ab accusamus suscipit cumque enim laborum, labore autem,
+                    ad excepturi. Sequi libero vel quos incidunt vitae voluptas exercitationem. Eligendi nisi explicabo
+                    exercitationem voluptatibus adipisci eaque fugit, fuga, dicta accusamus recusandae tempora molestiae
+                    debitis at sit repudiandae, sapiente deleniti vero quas fugiat incidunt quasi tenetur vitae velit!
+                    Eveniet quisquam dolore sunt!
+                </p>
+
+            </div>
+            <div id="react" class="content">
+                <div class="spacer"></div>
+                <h1 class="heading">React</h1>
+                <img src="./assets/demo-images/react.png" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reiciendis tempore cupiditate
+                    assumenda, error iste culpa praesentium. Consequuntur, tenetur. Et, tenetur. Atque quasi, ratione
+                    cumque laborum ex voluptate praesentium sint reprehenderit maxime molestias quisquam tempora, sequi
+                    iure amet aliquam dolor ipsum corrupti quaerat vel dolorum? Facilis officiis excepturi soluta
+                    possimus quisquam error doloribus consequatur qui modi impedit sint quasi dolorum reprehenderit
+                    alias odit temporibus quis deserunt, esse deleniti, fugit maxime expedita laboriosam minima!
+                    Reprehenderit, et rerum labore hic itaque quis maxime quibusdam temporibus distinctio voluptates ut
+                    eaque aliquid sapiente tempora animi, eligendi ab rem facere, consequatur perferendis! Reiciendis
+                    sequi consectetur rem delectus blanditiis, aliquid voluptate ex beatae qui autem. Libero quae earum
+                    nemo porro, neque ipsa vero iste culpa ad eum doloribus voluptatum ipsam iusto incidunt velit et
+                    officiis, quas quaerat, maiores impedit optio dolores voluptas at rerum. Commodi non quasi et sed
+                    harum quod, recusandae dolores ex vel illum ab accusamus suscipit cumque enim laborum, labore autem,
+                    ad excepturi. Sequi libero vel quos incidunt vitae voluptas exercitationem. Eligendi nisi explicabo
+                    exercitationem voluptatibus adipisci eaque fugit, fuga, dicta accusamus recusandae tempora molestiae
+                    debitis at sit repudiandae, sapiente deleniti vero quas fugiat incidunt quasi tenetur vitae velit!
+                    Eveniet quisquam dolore sunt!
+                </p>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Hyderabad</p>
+            <p>PINCODE-5656565</p>
+        </div>
+        <div>
+            <p>hyd@mail.com</p>
+            <p>9999999</p>
+        </div>
+    </footer>
+</body>
+
+</html>

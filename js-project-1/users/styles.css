@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: lightcoral;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+    color:aliceblue;
+    padding: 20px 0px;
+    font-weight: 300;
+}
+
+.container{
+    margin:50px 200px;
+    text-align: center;
+}
+
+.users-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.user-card{
+    width: 350px;
+    /* height: 250px; */
+    padding: 20px;
+    box-shadow: 0px 0px 10px lightcoral;
+    border-radius: 20px;
+    background-color: rgb(231, 221, 221);
+
+}
+
+.user-card img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgb(214, 203, 203);
+    margin-bottom: 30px;
+}
+
+.user-card button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: lightcoral;
+    font-size: 1rem;
+    color:white;
+}
+
+.user-card h1{
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    color: coral;
+}

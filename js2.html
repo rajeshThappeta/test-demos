@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(name, age) {
+                //instance properties
+                this.name = name;
+                this.age = age;
+            }
+            //instance method
+            getStudentDetails() {
+                return `name is ${this.name} and age is ${this.age} `
+            }
+            //static properties
+            static college = 'ABCD college';
+            static collegePincode = 222222;
+            //static method
+            static getCollegeDetails() {
+                return `College : ${Student.college} and pincode :${Student.collegePincode}`;
+            }
+        }
+
+
+
+
+
+
+        //accessing static 
+        console.log(Student.getCollegeDetails())
+
+        //accessing instance
+        let std = new Student("Ravi", 20)
+        console.log(std.getStudentDetails())
+    </script>
+</body>
+
+</html>

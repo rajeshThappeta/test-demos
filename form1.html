@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        input {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4d90fe;
+            box-shadow: 0 0 5px rgba(77, 144, 254, 0.5);
+        }
+
+        input:invalid:not(:focus):not(:placeholder-shown) {
+            border-color: #ff4444;
+        }
+
+        input:valid:not(:focus):not(:placeholder-shown) {
+            border-color: #00c851;
+        }
+
+        .error-message {
+            color: #ff4444;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        input:invalid:not(:focus):not(:placeholder-shown)~.error-message {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <span class="error-message">Please enter a valid email address</span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8"
+                placeholder="At least 8 characters">
+            <span class="error-message">Password must be at least 8 characters</span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

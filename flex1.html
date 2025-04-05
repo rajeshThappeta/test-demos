@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            display: flex;
+            max-width: 950px;
+            margin: auto;
+            border: 2px solid black;
+            flex-wrap: wrap;
+        }
+        .parent div{
+            width: 300px;
+            text-align: center;
+            flex-grow: 1;
+            /* flex-shrink: 1; */
+            border:1px solid green;
+        }
+
+        .parent img{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>
+            <img src="./assets/passport/passport-1.jpeg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia possimus enim ex dicta.
+                Asperiores nulla vitae optio nihil ad.
+            </p>
+        </div>
+        <div>
+            <img src="./assets/passport/passport-1.jpeg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia possimus enim ex dicta.
+                Asperiores nulla vitae optio nihil ad.
+            </p>
+        </div>
+        <div>
+            <img src="./assets/passport/passport-1.jpeg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia possimus enim ex dicta.
+                Asperiores nulla vitae optio nihil ad.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

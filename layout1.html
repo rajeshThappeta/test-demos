@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --tomoto-red: #CE4F65;
+            --light-grey: #F4F5F7;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* nav */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        nav .nav-blog-title {
+            color: gray;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+
+        nav .blog-title-part {
+            color: var(--tomoto-red);
+        }
+
+        nav ul {
+            display: flex;
+            width: 300px;
+            justify-content: space-evenly;
+            list-style-type: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: gray;
+            transition: background-color .3s;
+        }
+
+        nav ul a:hover {
+            background-color: var(--tomoto-red);
+            color: white;
+            border-radius: 4px;
+            padding: 4px 6px;
+            text-shadow: 0px 0px 10px var(--tomoto-red);
+            /* transform: scale(1.5); */
+        }
+
+        nav form input {
+            margin-right: 0;
+            border: none;
+            background-color: var(--light-grey);
+            padding: 6px;
+
+        }
+
+        nav form button {
+            margin-left: 0;
+            border: none;
+            background-color: var(--tomoto-red);
+            padding: 6px;
+            color: var(--light-grey);
+        }
+
+        /* main */
+        main {
+            background-color: var(--tomoto-red);
+            padding: 30px 100px;
+        }
+
+        main .title {
+            color: white;
+            text-align: center;
+            letter-spacing: 8px;
+        }
+
+        main .main-side-heading {
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px 0px;
+            margin-bottom: 30px;
+        }
+
+        main .title span {
+            font-size: 3rem;
+        }
+
+        main .cards-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        main .author-name {
+            color: white;
+            font-size: 1.2rem;
+            padding-bottom: 20px;
+        }
+
+        main img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #993546;
+        }
+
+        main .author-desc {
+            color: white;
+            font-size: 0.8rem;
+            padding: 10px 0px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        main .profile-button {
+            border: none;
+            padding: 8px;
+            background-image: linear-gradient(#e1667a, #CE4F65, #9d3143);
+            color: white;
+
+        }
+
+        /* footer */
+        footer{
+            display: flex;
+            padding: 100px;
+            background-color: var(--light-grey);
+            color: gray;
+            justify-content: space-evenly;
+            
+        }
+
+        footer div{
+            width: 300px;
+        }
+
+        footer h2{
+            padding-bottom: 20px;
+        }
+
+        footer p{
+            font-size: 0.9rem;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <h2 class="nav-blog-title">Quick<span class="blog-title-part">Blog</span></h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <form>
+            <input type="text" name="" id="" placeholder="Seach blogs...">
+            <button>Search</button>
+        </form>
+    </nav>
+    <!-- main -->
+    <main>
+        <h1 class="title">THE BEST SITE FOR PLACE HOLDERS <br> <span>26000 USERS</span></h1>
+        <p class="main-side-heading">Slideshow Members</p>
+        <!-- cards -->
+        <div class="cards-container">
+            <div class="profile">
+                <p class="author-name">Andrews</p>
+                <img src="./assets/emp-profile-imgs/1.jpg" alt="">
+                <p class="author-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, porro vero error in natus nisi ex
+                    doloremque itaque molestias impedit, aliquam laudantium eius ratione maxime libero hic quis. Ut,
+                    vero.
+                </p>
+                <button class="profile-button">ReadMore</button>
+            </div>
+            <div class="profile">
+                <p class="author-name">Villiams</p>
+                <img src="./assets/emp-profile-imgs/4.jpg" alt="">
+                <p class="author-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, porro vero error in natus nisi ex
+                    doloremque itaque molestias impedit, aliquam laudantium eius ratione maxime libero hic quis. Ut,
+                    vero.
+                </p>
+                <button class="profile-button">ReadMore</button>
+            </div>
+            <div class="profile">
+                <p class="author-name">Jessy</p>
+                <img src="./assets/emp-profile-imgs/2.jpg" alt="">
+                <p class="author-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, porro vero error in natus nisi ex
+                    doloremque itaque molestias impedit, aliquam laudantium eius ratione maxime libero hic quis. Ut,
+                    vero.
+                </p>
+                <button class="profile-button">ReadMore</button>
+            </div>
+            <div class="profile">
+                <p class="author-name">Kenny</p>
+                <img src="./assets/emp-profile-imgs/3.jpg" alt="">
+                <p class="author-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, porro vero error in natus nisi ex
+                    doloremque itaque molestias impedit, aliquam laudantium eius ratione maxime libero hic quis. Ut,
+                    vero.
+                </p>
+                <button class="profile-button">ReadMore</button>
+            </div>
+
+        </div>
+    </main>
+    <!-- footer -->
+     <footer>
+        <div>
+            <h2>Most Tweets</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam.
+            </p>
+        </div>
+        <div>
+            <h2>Articles</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum, aut necessitatibus repudiandae incidunt molestiae.
+            </p>
+        </div>
+        <div>
+            <h2>Recent Blogs</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam.
+            </p>
+        </div>
+     </footer>
+
+</body>
+
+</html>

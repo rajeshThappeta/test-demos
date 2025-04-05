@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     //map
+    //     let stdObj1={sno:1}
+    //     let stdMap=new Map();
+    //     stdMap.set(stdObj1,"one")
+    //     console.log(stdMap.keys(),stdMap.values())
+    //     console.log(stdMap.has(stdObj1))
+    //     stdObj1=null;
+    //     console.log(stdMap.keys(),stdMap.values())
+    //     console.log(stdMap.has(stdObj1))
+
+    //     //WeakMap
+    //     let stdObj2={sno:2}
+    //     let stdWeakMap=new WeakMap()
+    //     stdWeakMap.set(stdObj2,"two")
+    //     console.log(stdWeakMap.has(stdObj2))
+    //    console.log(stdWeakMap.stdObj2)
+    //     stdObj2=null;
+    //     console.log(stdWeakMap.has(stdObj2))
+      
+
+        //
+        {
+            //testObj1 & testObj2 are local to this 
+            let testObj1={no:1}
+            let testObj2={no:2}
+            var map=new Map();
+            var weakMap=new WeakMap()
+            map.set(testObj1,"hello")
+            weakMap.set(testObj2,"hello again")
+        }
+
+        console.log(map)//entries found(map maintains the object )
+        console.log(weakMap)//no entries(weak map looses the object)
+       
+
+    </script>
+</body>
+</html>
