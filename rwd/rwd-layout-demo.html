@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: rgb(50, 45, 45);
+        }
+
+        nav ul {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        nav input {
+            border: none;
+            padding: 8px;
+            background-color: lightgray;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        nav button {
+            display: none;
+            border: none;
+            padding: 8px 12px;
+            background-color: rgb(215, 209, 209);
+            color: rgb(16, 156, 222);
+            font-size: 1.2rem;
+            border-radius: 4px;
+        }
+
+        /* header */
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            background-image: linear-gradient(to right, #73BCE0, #C6B390);
+            gap: 50px;
+        }
+
+        header .left {
+            width: 400px;
+        }
+
+        header .left p {
+            padding: 30px 0px;
+        }
+
+        header .left button {
+            border: none;
+            padding: 8px 25px;
+            font-size: 1.3rem;
+        }
+
+        header .right {
+            width: 500px;
+        }
+
+        header .right img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+
+        /* section */
+        section {
+            display: flex;
+            /* min-height: 90vh; */
+
+        }
+
+        section .sidebar {
+            width: 200px;
+            /* background-color: #969797; */
+            border-right: 2px solid grey;
+        }
+
+        section ul {
+            line-height: 5;
+            text-align: center;
+        }
+
+        section .sidebar a {
+            color: darkslategray;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+
+        section .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 100%;
+            padding: 100px 20px;
+            gap: 20px 20px;
+        }
+
+        .tech {
+            border-radius: 10px;
+            place-items: center;
+            display: grid;
+            font-size: 3rem;
+        }
+
+        .tech-1 {
+            background-color: brown;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            color: rgb(201, 169, 169);
+        }
+
+        .tech-2 {
+            background-color: rgb(20, 8, 8);
+            grid-column: 2/4;
+            grid-row: 1/2;
+            color: rgb(201, 169, 169);
+        }
+
+        .tech-3 {
+            background-color: rgb(5, 105, 163);
+            grid-column: 1/3;
+            grid-row: 2/3;
+            color: rgb(201, 169, 169);
+        }
+
+        .tech-4 {
+            background-color: rgb(189, 9, 108);
+            grid-column: 3/4;
+            grid-row: 2/3;
+            color: rgb(201, 169, 169);
+        }
+
+        .tech-5 {
+            background-color: rgb(27, 3, 180);
+            grid-column: 1/2;
+            grid-row: 3/4;
+            color: rgb(201, 169, 169);
+        }
+
+        .tech-6 {
+            background-color: rgb(4, 163, 68);
+            grid-column: 2/3;
+            grid-row: 3/4;
+            color: rgb(201, 169, 169);
+        }
+
+        .tech-7 {
+            background-color: rgb(100, 114, 5);
+            grid-column: 3/4;
+            grid-row: 3/4;
+            color: rgb(201, 169, 169);
+        }
+
+        @media screen and (max-width: 576px) {
+            nav form {
+                display: none;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav button {
+                display: block;
+            }
+
+            header .right {
+                display: none;
+            }
+
+            section {
+                flex-direction: column;
+            }
+
+            section .sidebar {
+                width: 100%;
+            }
+
+            section ul {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            section .main-content{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                padding-top: 0px;
+            }
+
+            .tech {
+                grid-column: 1/2;
+            }
+
+            .tech-1 {
+                grid-row: 1/2;
+            }
+
+            .tech-2 {
+                grid-row: 2/3;
+            }
+            .tech-3 {
+                grid-row: 3/4;
+            }
+            .tech-4 {
+                grid-row: 4/5;
+            }
+            .tech-5 {
+                grid-row: 5/6;
+            }
+            .tech-6 {
+                grid-row: 6/7;
+            }
+            .tech-7 {
+                grid-row: 7/8;
+            }
+        }
+
+        @media screen and (min-width: 577px) and (max-width:992px) {
+
+            nav form {
+                display: none;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <img src="../assets/logos/lg1.png" width="60px" alt="" class="logo">
+        <form>
+            <input type="text" placeholder="Search....">
+        </form>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Signin</a></li>
+            <li><a href="#">Contact</a></li>
+            </li>
+        </ul>
+        <button>Menu</button>
+    </nav>
+    <!-- main -->
+    <header>
+        <div class="left">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed nam odio! Hic saepe enim architecto
+                quos aut aliquam minima?</p>
+            <button>More details</button>
+        </div>
+        <div class="right">
+            <img src="../assets/demo-images/pexels-freestockpro-1007973.jpg" alt="">
+        </div>
+    </header>
+
+    <section>
+        <div class="sidebar">
+            <ul>
+                <li><a href="">Link-1</a></li>
+                <li><a href="">Link-2</a></li>
+                <li><a href="">Link-3</a></li>
+                <li><a href="">Link-4</a></li>
+                <li><a href="">Link-5</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="tech tech-1">React</div>
+            <div class=" tech tech-2">Java</div>
+            <div class="tech tech-3">Python</div>
+            <div class="tech tech-4">Express</div>
+            <div class="tech tech-5">Ruby</div>
+            <div class="tech tech-6">Angular</div>
+            <div class="tech tech-7">Next.js</div>
+        </div>
+    </section>
+    <!-- footer -->
+</body>
+
+</html>
